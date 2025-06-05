@@ -1,0 +1,308 @@
+/* font */
+.montserrat-test {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+    
+html {background: linear-gradient(to bottom, hsl(0, 0%, 39%), hsl(0, 0%, 9%));
+}
+
+
+body {
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.name {
+    color: white;
+    font-size: 25px;
+}
+
+.name h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    background-color: hsl(0, 0%, 39%);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+}
+
+.itens {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    list-style: none;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    transition: 200ms;
+    padding: 4px 4px;
+    display: block;
+}
+
+.navbar a:hover {
+    color: hsl(0, 0%, 15%);
+    transform: translateY(-2px);
+}
+
+.burger {
+    display: none; /* Hide burger by default on larger screens */
+    cursor: pointer;
+}
+
+.navbar-expanded {
+    /* This class is toggled by JS */
+    color: white;
+}
+
+/* Optional: Mobile responsiveness */
+@media (max-width: 768px) {
+    .burger {
+        display: flex; /* Show burger on smaller screens */
+        justify-content: center;
+        transition: transform 300ms;
+    }
+    .burger:hover {
+        transform: rotate(90deg);
+    }
+    .itens {
+        display: none; /* Hide original items on small screens */
+    }
+    .navbar-expanded .itens {
+        display: flex; /* Show items in column when navbar is expanded */
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+        gap: 10px; /* Adjust gap as needed for vertical layout */
+        margin-left: 0;
+        width: 100%;
+    }
+    .navbar-expanded {
+        flex-direction: column; /* Stack navbar content vertically when expanded */
+        align-items: flex-start;
+        padding-bottom: 20px; /* Add some space below expanded items */
+    }
+}
+
+.textoabout h1 {
+    color: white;
+    margin-left: 27%;
+    margin-top: 2%;
+}
+
+.textohome {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.textohome h1 {
+    color: white;
+    font-size: 100px;
+    display: block;
+    margin-top: 2%;
+    margin: auto;
+    text-shadow: 0px 10px 20px hsl(0, 0%, 0%);
+}
+
+.textohome h3 {
+        color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 7%;
+        margin-bottom: 50px;
+}
+
+.textocontato h1 {
+    color: white;
+    margin-left: 27%;
+    margin-top: 2%;
+}
+
+.textoabout p {
+    color: white;
+    margin-left: 25%;
+    margin-right: 20%;
+    padding-top: 1%;
+    text-indent: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.textocontato p {
+    color: white;
+    margin-left: 30%;
+    margin-right: 20%;
+    padding-top: 1%;
+}
+
+.sejasigma {
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-bottom: 10%;
+}
+
+.entrehoje {
+    color: white;
+    display: inline-block;
+    background-color: hsl(0, 0%, 39%);
+    border-radius: 15px;
+    border: 3px outset black;
+    text-decoration: 0;
+    scale: 110%;
+    box-shadow: 3px 5px 10px hsl(0, 0%, 0%);
+    transition: 0.3s ease-in-out;
+}
+.entrehoje:hover {
+    color: rgb(48, 48, 48);
+    background-color: rgb(206, 206, 206);
+    transform: scale(110%);
+    transition: 0.3s ease-in-out;
+}
+.entrehoje h1 {
+    padding: 4px 4px 4px 4px;
+}
+
+
+
+.footer {
+    background-color: hsl(0, 0%, 9%);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .footer-buttons {
+    margin-bottom: 15px;
+    scale: 80%;
+  }
+  
+  .footer-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: rgb(122, 122, 122);
+    color: black;
+    border: 2px solid hsl(0, 0%, 39%);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.7s ease;
+  }
+  
+  .footer-buttons button:hover {
+    background-color: hsl(0, 0%, 39%);
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s ease;
+  }
+
+  .footer-buttons button a {
+    text-decoration: none;
+    color: black;
+  }
+  
+
+@media (max-width: 768px) {
+    .squares-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .square {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+.squares-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px; /* Add some space above the squares */
+}
+
+.square {
+    background-color: hsl(0, 0%, 9%); /* Example background color */
+    width: 430px; /* Adjust as needed */
+    height: 460px; /* Adjust as needed */
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px hsl(0, 0%, 0%);
+    text-align: center;
+    transition: 0.6s ease-in-out;
+}
+
+.square:hover {
+    box-shadow: 0px 0px 30px rgb(0, 65, 65);
+    border: solid rgb(0, 65, 65);
+    box-shadow: 0px 0px 0px hsl(0, 0%, 0%);
+    transform: translateY(-10px);
+    transition: 0.5s ease-in-out;
+}
+
+.square h2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: white;
+    text-align: start;
+}
+
+.assineja {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+    margin-top: 5%;
+}
+
+.botaoassine button {
+    background: hsl(0, 0%, 9%);
+    border-radius: 20px;
+    border: outset;
+    box-shadow: 20px 20px 50px hsl(0, 0%, 0%);
+    width: 500px;
+    transition: 0.4s ease all;
+}
+
+.botaoassine a {    text-decoration: none;  }
+
+.botaoassine button:hover {
+    scale: 110%;
+    background: rgb(192, 189, 189);
+    transition: 0.3s ease all;
+}
+
+.botaoassine h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: white;
+}
